@@ -24,7 +24,6 @@
         </insert>
         <rollback>delete from category where id=1 or id=2 or id=3 or id=4 or id=5</rollback>
     </changeSet>
-    <!--
     <changeSet logicalFilePath="path-independent"  author="juanse.perez" id="14033-1">
         <insert tableName="category">
             <column name="id" valueNumeric="6"/>
@@ -32,5 +31,4 @@
         </insert>
         <rollback>delete from category where id=6</rollback>
     </changeSet>
-    -->
 </databaseChangeLog>

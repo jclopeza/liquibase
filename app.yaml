@@ -12,6 +12,6 @@ spec:
   deployables:
   - name: changesets
     type: liquibase.Changelog
-    changeLogFile: root.xml
+    changeLogFile: 00-db-master.xml
     rollbackVersion: !value version
     file: !file "changesets"

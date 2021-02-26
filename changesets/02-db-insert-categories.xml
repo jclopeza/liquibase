@@ -31,4 +31,13 @@
         </insert>
         <rollback>delete from category where id=6</rollback>
     </changeSet>
+
+    <changeSet logicalFilePath="path-independent"  author="juanse.perez" id="13334033-1">
+        <insert tableName="category">
+            <column name="id" valueNumeric="7"/>
+            <column name="name" value="new value GISS"/>
+        </insert>
+        <rollback>delete from category where id=7</rollback>
+    </changeSet>
+
 </databaseChangeLog>

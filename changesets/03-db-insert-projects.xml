@@ -30,18 +30,4 @@
         <rollback>delete from project_data where id=1 or id=2</rollback>
     </changeSet>
 
-    <changeSet logicalFilePath="path-independent"  author="jclopeza" id="1403013335-3">
-        <insert tableName="project_data">
-            <column name="id" valueNumeric="3"/>
-            <column name="description" value="datos proyecto 1"/>
-            <column name="project_id" valueNumeric="1"/>
-        </insert>
-        <insert tableName="project_data">
-            <column name="id" valueNumeric="4"/>
-            <column name="description" value="datos proyecto 2"/>
-            <column name="project_id" valueNumeric="2"/>
-        </insert>
-        <rollback>delete from project_data where id=3 or id=4</rollback>
-    </changeSet>
-
 </databaseChangeLog>
